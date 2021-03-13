@@ -1,0 +1,112 @@
+.header {
+    min-height: 100vh;
+    background: url('../images/indonesia/header-bg.jpg') no-repeat top center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 1px;
+
+    @media (min-width: 768px) {
+        background-attachment: fixed;
+    }
+
+
+
+
+
+    &--bali {
+        background-image: url('../images/bali/header-bg.jpg');
+    }
+
+    &--plan {
+        background-image: url('../images/plan/header-bg.jpg');
+    }
+
+    &--nusa {
+        background-image: url('../images/nusa-da/header-bg.jpg');
+        min-height: 450px;
+    }
+
+    &--look {
+        background-image: url('../images/look/header-bg.jpg');
+    }
+
+    &--gallery {
+        background-image: none;
+        min-height: auto; 
+    }
+
+    &--faq {
+        background: url('../images/faq/header-bg.jpg') no-repeat top center;
+        background-size: cover;
+        min-height: 230px;
+    }
+
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        
+
+    }
+
+    &__wrap {
+        background-color: $dblue;
+        @include size(100%, auto);
+        position: fixed;
+        z-index: 4;
+        box-shadow: 0 0 5px #000;
+
+        
+    }
+
+    &__block {
+        background-color: $back;
+        @include pos($l:0, $b: 11.1vh);
+        @include size(100%, auto);
+        z-index: 3;
+    }
+
+    &__title {
+        color: $back;
+        text-transform: uppercase;
+        font: 700 60px/60px $mons;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 30vh;
+
+        @media (min-width: 768px) {
+            font-size: 120px;
+            line-height: 146px;
+        }
+
+        &--plan {
+            font-size: 50px;
+            line-height: 62px;
+            text-align: center;
+            width: 100%;
+            text-transform: none;
+            margin-top: 15vh;
+
+            @media (min-width: 768px) {
+                font-size: 60px;
+                line-height: 72px;
+                width: 50%;
+                text-align: left;
+            }
+        }
+
+        &--look {
+            font:700 60px/72px $font;
+            text-transform: none;
+        }
+    }
+
+    &__subtitle {
+        font: 400 36px/46px $mons;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 13vh;
+    }
+}

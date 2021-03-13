@@ -1,0 +1,190 @@
+.gallery {
+    overflow-x: hidden;
+    padding-top: 1px;
+    font-size: 16px;
+
+    background-color: $back;
+    color: $dblue;
+
+    &__title {
+        margin-top: 125px;
+        max-width: 730px;
+        width: 100%;
+        font-size: 60px;
+        line-height: 72px;
+        font-weight: 700;
+        margin-bottom: 60px;
+        padding: 0 15px;
+
+        @media (min-width: 768px) {
+            padding: 0;
+        } 
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    &__text {
+        max-width: 460px;
+        font-size: 18px;
+        line-height: 34px;
+        padding: 0 15px;
+
+        @media (min-width: 768px) {
+            padding: 0;
+        } 
+    }
+
+    &__first {
+        max-width: 763px;
+        width: 100%;
+    }
+
+    &__photo {
+        position: relative;
+        display: block;
+    }
+
+    &__name {
+        @include pos($b:0, $l:0);
+        @include size(100%, 50px);
+        background-color: $dblue;
+        text-align: center;
+        font: 700 24px/28px $font;
+        color: #FFFBED;
+        padding: 10px 0;
+
+        &--top {
+            top:0;
+            bottom: unset;
+        }
+    }
+
+    &__margin {
+        margin-bottom: 140px;
+    }
+
+
+    &__cities {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+            margin: 0 30px 0 0;
+        }
+    }
+
+    &__fauna {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+            margin: 0 30px 0 0;
+        }
+    }
+
+    &__flora {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+            margin: 0 30px 0 0;
+        }
+    }
+
+    &__volcanoes {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+            margin: 0 30px 0 0;
+        } 
+    }
+
+    &__beaches {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+        } 
+    }
+
+    &__beautiful {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+        } 
+    }
+
+    &__sights {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+        }
+    }
+
+    &__food {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+        }
+    }
+
+    &__entertainment {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+        }
+    }
+
+    &__locals {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+        }
+    }
+
+    &__hotels {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+
+    a > img {
+
+            @media (max-width: 768px) {
+                min-width: 414px;
+                width: 100%;
+            }
+        }
+    
+}

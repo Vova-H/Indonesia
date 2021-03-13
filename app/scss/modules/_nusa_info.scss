@@ -1,0 +1,84 @@
+.nusa_info {
+    padding-top: 70px;
+    font-family: $font;
+    font-weight: 700;
+    color: rgba(2, 37, 99, 1);
+    margin-bottom: 140px;
+
+    .container--wrap {
+        display: flex;
+    }
+
+    .text {
+        max-width: 50%;
+        font-size: 42px;
+        line-height: 72px;
+        margin-right: 250px;
+    }
+
+    .block {
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+
+    }
+
+    .icon {
+        font-size: 30px;
+        margin-right: 150px;
+    }
+
+    .icon-location {
+        font-size: 36px;
+        transform: translateX(-3px);
+    }
+
+    .item {
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+@media(max-width:500px) {
+    .nusa_info {
+
+        .container--wrap{
+            justify-content: space-between;
+        }
+
+        margin-bottom: 30px;
+        .text {
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            line-height: 24px;
+            padding-right: 65px;
+        }
+
+        .icon{
+            margin: 0;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        .block{
+            font-size: 16px;
+        }
+
+        .item{
+            margin-bottom: 30px;
+        }
+
+        .icon-location {
+            font-size: 26px;
+            transform: translateX(-3px);
+        }
+    }
+
+
+}

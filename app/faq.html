@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Indonesia">
+    <meta name="author" content="Vova & Roma">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>FAQ - Indonesia </title>
+
+    <link rel="icon" href="images/favicon.png">
+
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/bundle.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <!--endbuild-->
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <header class="header header--faq">
+        <div class="header__wrap">
+            <div class="container container--wrap">
+                <nav class="header__nav">
+                    <a href="index.html" class="logo">
+                        <i class="icon-Ind"></i><i class="icon-globe-1"></i>
+                    </a>
+                    <div class="header__menu menu">
+                        <input type="checkbox" class="menu__toggle" id="menu">
+                        <label for="menu" class="menu__label">
+                            <span class="menu__line"></span>
+                        </label>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html#popular" class="menu__link">Tours</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="gallery.html" class="menu__link">Gallery</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="faq.html#contacts" class="menu__link active">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="faq">
+        <div class="container container--wrap">
+            <h1 class="faq__title">
+                faq
+            </h1>
+            <div class="faq__accordion accordion col-12 col-md-auto row" id="sidebarNavigation">
+                <div class="col-12 col-md-auto">
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#categories"
+                                aria-expanded="false">
+                                What is the difference between trips "3 days in Java" and "55 hours in Java"?
+                            </h2>
+                        </div>
+                        <!-- aria-expanded - развернут или свернут текущий елемент -->
+                        <!-- show который показывать -->
+                        <!-- поменять id="" одинаковый с data-target="#"   -->
+                        <div id="categories" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#order"
+                                aria-expanded="false">
+                                How to make an order?
+                            </h2>
+                        </div>
+                        <div id="order" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#answer"
+                                aria-expanded="false">
+                                How long does it take to get an answer?
+                            </h2>
+                        </div>
+                        <div id="answer" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#pay"
+                                aria-expanded="false">
+                                How to pay?
+                            </h2>
+                        </div>
+                        <div id="pay" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#trained"
+                                aria-expanded="false">
+                                It's complicated? Dangerous? Do we need to be specially trained?
+                            </h2>
+                        </div>
+                        <div id="trained" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#cancel"
+                                aria-expanded="false">
+                                How do I cancel my reservation?
+                            </h2>
+                        </div>
+                        <div id="cancel" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#rain"
+                                aria-expanded="false">
+                                It's cold there? How many degrees? Can it rain?
+                            </h2>
+                        </div>
+                        <div id="rain" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#children"
+                                aria-expanded="false">
+                                Can I travel with children? Are there any discounts?
+                            </h2>
+                        </div>
+                        <div id="children" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#group"
+                                aria-expanded="false">
+                                How many people are usually in the group?
+                            </h2>
+                        </div>
+                        <div id="group" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#reservation"
+                                aria-expanded="false">
+                                How do I cancel my reservation?
+                            </h2>
+                        </div>
+                        <div id="reservation" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#cold"
+                                aria-expanded="false">
+                                It's cold there? How many degrees? Can it rain? </h2>
+                        </div>
+                        <div id="cold" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#people"
+                                aria-expanded="false">
+                                How many people are usually in the group? </h2>
+                        </div>
+                        <div id="people" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto accordion__box">
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#Java"
+                                aria-expanded="false">
+                                What is the difference between trips "3 days in Java" and "55 hours in Java"? </h2>
+                        </div>
+                        <div id="Java" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#make"
+                                aria-expanded="false">
+                                How to make an order? </h2>
+                        </div>
+                        <div id="make" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#long"
+                                aria-expanded="false">
+                                How long does it take to get an answer? </h2>
+                        </div>
+                        <div id="long" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#pay2"
+                                aria-expanded="false">
+                                How to pay? </h2>
+                        </div>
+                        <div id="pay2" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#Dangerous"
+                                aria-expanded="false">
+                                It's complicated? Dangerous? Do we need to be specially trained? </h2>
+                        </div>
+                        <div id="Dangerous" data-parent="#sidebarNavigation" class="collapse">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore iste
+                                    assumenda
+                                    ratione, eius accusantium!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card accordion__card col-12 col-md-5">
+                        <div class="card-header accordion__header">
+                            <h2 class="accordion__title" data-toggle="collapse" data-target="#tags"
+                                aria-expanded="true">
+                                Why is it profitable to book with us?
+                            </h2>
+                        </div>
+                        <div id="tags" data-parent="#sidebarNavigation" class="collapse show">
+                            <div class="card-body accordion__body">
+                                <p class="accordion__text">Indo is a team of professionals with over 15 years of
+                                    experience
+                                    in tourism.</p>
+
+                                <p class="accordion__text">Your reservations and requests are considered individually,
+                                    which
+                                    allows you to flexibly
+                                    resolve the situation and offer the best options.</p>
+
+                                <p class="accordion__text">We will definitely call you back or send you a WhatsApp
+                                    message
+                                    after booking.</p>
+
+                                <p class="accordion__text">Our priority is “maximum customer satisfaction”. We love Bali
+                                    and
+                                    Java (and especially
+                                    volcanoes), so we want you to fall in love with them too.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contacts" class="faq__contacts contacts">
+                <div class="contacts__wrap">
+                    <h2 class="contacts__subtitle">
+                        Our contacts
+                    </h2>
+                    <h2 class="contacts__title">
+                        Contact us in any convenient way. We will be glad to new ideas and answer your questions:
+                    </h2>
+
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/%D0%91%D0%B0%D1%83%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+68%2F8+%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5+1,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+105005/@55.765248,37.6774772,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54a9b563ad521:0x9f8ebd95808bf224!8m2!3d55.765248!4d37.6796659"
+                        class="contacts__link">
+                        Our address: Moscow,
+                        Baumanskaya street 8
+                    </a>
+                    <a href="mailto:indoindo@indo.com?body=HALLO" target="_blank" class="contacts__link">E-mail:
+                        indoindo@indo.com
+                    </a>
+                    <a class="contacts__link" href="tel:+380662563289">Phone: +380662563289</a>
+                </div>
+                <img src="images/faq/contact.jpg" alt="images/faq/contact.jpg" class="contacts__img">
+            </div>
+        </div>
+
+    </main>
+
+    <section class="feedback">
+        <div class="container container--wrap">
+            <div class="wrapper">
+                <div class="text">
+                    Your opinion is very important to us - it helps us to constantly improve!
+                </div>
+                <a href="#" class="btn btn--feedback">Give Feedback</a>
+            </div>
+        </div>
+    </section>
+
+    <footer data-aos="fade-up" class="footer">
+        <div class="container container--wrap">
+            <div class="footer__wrap">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="index.html" class="logo logo--footer">
+                            <i class="icon-Ind"></i><i class="icon-globe-1 icon-globe-1--footer"></i>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <i class="icon-phone"></i>
+                        <a href="tel:+380662563289" class="footer__link footer__link--contact">+380662563289</a>
+                    </li>
+                    <li class="footer__item">
+                        <i class="icon-mail"></i>
+                        <a href="mailto:indoindo@indo.com" target="_blank"
+                            class="footer__link footer__link--contact">indoindo@indo.com</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item footer__item">
+                        <a href="index.html#popular" class="footer__link footer__link--active">Tours</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="index.html#popular" class="footer__link">Travel tours</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="index.html#popular" class="footer__link">VIP tours</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="index.html#popular" class="footer__link">Jailoo tours</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="index.html#popular" class="footer__link">Eco tours</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="look.html" class="footer__link footer__link--active">Look and do</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="look.html#diving" class="footer__link">Diving</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="look.html#sports" class="footer__link">Sports travel</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="look.html#fauna" class="footer__link">Fauna observation</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="look.html#volcanoes" class="footer__link">Volcanoes</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="plan.html" class="footer__link footer__link--active">plan</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="plan.html#services" class="footer__link">Hotels</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="plan.html#services" class="footer__link">Transport order</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="plan.html#services" class="footer__link">Restaurants</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="plan.html#services" class="footer__link">Insurance</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="faq.html" class="footer__link footer__link--active">FAQ</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="faq.html" class="footer__link">Nature </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="faq.html" class="footer__link">Culture and creativity </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="faq.html" class="footer__link">Stories and legends</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="faq.html" class="footer__link">People and traditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__box">
+                <p class="footer__text"><a href="javascript:;" class="footer__link">&copy; 2020 Indo Use Rights</a></p>
+                <p class="footer__text"> <a href="javascript:;" class="footer__link">Privacy policy</a></p>
+                <p class="footer__text"><a href="javascript:;" class="footer__link">Terms and Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- <i class="icon-time"></i>
+	<i class="icon-phone"></i>
+	<i class="icon-mail"></i>
+	<i class="icon-Star"></i>
+	<i class="icon-slider-arrow-r"></i>
+	<i class="icon-slider-arrow-l"></i>
+	<i class="icon-person"></i>
+	<i class="icon-calendar"></i>
+	<i class="icon-arrow"></i>
+	<i class="icon-location"></i>
+	<i class="icon-car"></i>
+	<i class="icon-home"></i> -->
+
+
+    <!--build:js js/main.min.js -->
+    <script src="js/bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--endbuild-->
+</body>
+
+</html>

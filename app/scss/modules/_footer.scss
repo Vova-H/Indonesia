@@ -1,0 +1,97 @@
+.footer {
+    color: $footer;
+    background-color: $dblue;
+    padding: 80px 0 30px;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    &__wrap {
+    text-align: center;
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 90px;
+            text-align: left;
+        }
+
+        &::before {
+            @include size(100%, 2px);
+            @include pos($l:0, $b:-60px);
+            content: '';
+            background: $white;
+            opacity: .2;
+        }
+    }
+
+    &__box {
+        text-align: center;
+
+
+        @media (min-width: 768px) {
+            display: flex;
+            width: 55.5%;
+            justify-content: space-between;
+            transform: translateX(80%);
+    
+            align-items: center;
+        }
+
+        .footer__text > .footer__link {
+            font-size: 12px;
+            line-height: 46px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+        }
+    }
+
+    &__list {
+        margin: 0 15px 35px;
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 30px;
+
+        &:first-child {
+            margin-bottom: 15px;
+        }
+
+
+        @media (min-width: 768px) {
+            line-height: 46px;
+
+            &:first-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        
+    }
+
+    &__link {
+        color: $footer;
+        font-size: 16px;
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &--contact {
+            font-feature-settings: 'pnum' on, 'lnum' on;
+        }
+
+        &--active {
+            color: $white;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+.my_modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 99;
+    /* Sit on top */
+    padding-top: 30vh;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    
+}
+
+
+.my_modal-content {
+    position: relative;
+    background-color: $back;
+    margin: auto;
+    padding: 0;
+    // border: 5px solid #7B1FA2;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+   
+
+}
+
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+
+.my_close {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.my_close:hover,
+.my_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.my_modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 60, 161, 1);
+    color: white;
+    min-height: 10vh;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+}
+
+
+.my_modal-body {
+    padding: 2px 16px;
+    padding-top: 5%;
+    min-height: 20vh;
+    font-size: 28px;
+    margin: 0 auto;
+    
+    
+    
+    .info{
+        margin-bottom: 30px;
+        text-decoration-line: underline;
+    }
+}
+
+
+@media(max-width:500px) {
+
+
+    .my_modal{
+        padding-top: 20vh;
+        margin: 0 auto;
+        
+    }
+
+    .my_modal-content{
+        width: 90%;
+    }
+
+    .my_close{
+        font-size: 40px;
+        top: 10px;
+        right: 10px;
+
+    }
+
+    .my_modal-header{
+        font-size: 18px;
+        
+    }
+
+    
+
+    .my_modal-body {
+        font-size: 18px;
+        min-height: 30vh;
+    }
+}

@@ -1,0 +1,320 @@
+.slider {
+    overflow: hidden;
+    margin-bottom: 0;
+    @media (min-width: 768px) {
+        margin-bottom: 150px;
+
+    }
+
+    &__wrap {
+        margin-bottom: 80px;
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        
+
+
+        width: 385px;
+        position: relative;
+        margin-right: 60px;
+        flex-grow: 1;
+
+        &--places {
+            width: 860px;
+            margin-right: 70px;
+        }
+
+        &--bali {
+            width: 400px;
+            height: auto;
+
+            @media (min-width: 768px) {
+                width: 625px;
+                margin-right: 30px;     
+            }
+
+        }
+    }
+
+    &__pic {
+        
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;       
+        }
+    }
+
+    &__body {
+        padding: 35px 15px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 390px;
+        width: 385px;
+        background-color: #fff;
+
+        @media (max-width: 768px) {
+            height: 445px;
+        }
+        
+
+        &--places{
+            position: unset;
+            padding: 50px;
+
+            @media (min-width: 768px) {
+                @include pos($t:120px, $l:407px);
+                height: auto;
+                padding: 100px 45px;
+                width: 485px;
+            }
+
+
+        }
+
+        &--bali {
+            width: 400px;
+            padding: 30px;
+            height: auto;
+
+            @media (min-width: 768px) {
+                width: 625px;
+                height: 650px;
+                padding: 30px;  
+            }
+        }
+
+        &--look {
+            height: auto;
+            width: 385px;
+            min-height: 525px;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 700;
+        margin-bottom: 15px;
+
+        @media (max-width: 768px) {
+            padding-top: 20px;
+        }
+
+
+        &--places {
+            line-height: 28px;
+        }
+
+        &--bali {
+            line-height: 34px;
+            margin-bottom: 20px;
+        }
+        
+        &--look {
+            margin-bottom: 0;
+        }
+    }
+
+    &__stars {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        margin-bottom: 30px;
+
+        .icon-Star {
+            color: $dstar;
+            &:nth-child(5) {
+                color: $lstar;
+            }
+        }
+
+        &--bali {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__rating {
+        margin-left: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+
+        &--bali, &--look {
+            flex-direction: column;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 245px;
+        width: 100%;
+
+        
+        &--places {
+            margin-bottom: 35px;
+            max-width: none;
+            font-size: 18px;
+            line-height: 34px;
+        }
+
+        &--bali {
+            max-width: none;
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+
+
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            &:nth-of-type(1) {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            &:nth-of-type(2) {
+                font-size: 18px;
+                margin-bottom: 35px;
+            }
+        }
+
+        &--look {
+            margin-top: 20px;
+            max-width: 315px;
+            font-size: 16px;
+            line-height: 24px;
+
+            &:nth-of-type(1) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            &:nth-of-type(3) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__btn {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: $dblue;
+        border: 1px solid $dblue;
+        padding: 25px 100px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        display: inline-block;
+
+        @media (max-width: 768px) {
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+
+        &--places {
+            padding: 25px 45px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            width: 190px;
+        }
+    }
+
+    &__duration {
+        @include pos($t:0, $l:0);
+        background-color: $lblue;
+        color: $white;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        padding: 5px 10px;
+
+        &--bali {
+            left: unset;
+            right: 0;
+        }
+
+    }
+
+    &__price {
+        @extend .slider__duration;
+        right: 0;
+        left: unset;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        &--bali {
+            margin-top: 60px;
+        }
+    }
+
+    &__from {
+        @extend .slider__duration;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            margin-top: -80px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__arrows {
+        max-width: 100px;
+        width: 100%;
+        font-size: 35px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 90px;
+        cursor: pointer;
+
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+
+
+        .slick-disabled {
+            color: $dblue;
+            opacity: .5;
+        }
+        
+    }
+
+
+ 
+    &__line {
+	display: block;
+	width: 100%;
+	height: 4px;
+    overflow: hidden;
+    background-color: $lslider;
+	background-image: linear-gradient(to right, $dblue, $dblue);
+	background-repeat: no-repeat;
+	background-size: 0 100%;
+	
+	transition: background-size 0.4s ease-in-out;
+	z-index: 3;
+  
+    }
+}

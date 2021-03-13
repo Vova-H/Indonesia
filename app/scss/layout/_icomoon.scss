@@ -1,0 +1,65 @@
+
+  @include font-face('icomoon', 'fonts/icomoon/icomoon', $ver: '?fl13jk');
+  
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    // speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-globe-1:before {
+    content: "\e90d";
+  }
+  .icon-Ind:before {
+    content: "\e90e";
+  }
+  .icon-map:before {
+    content: "\e90c";
+  }
+  .icon-car:before {
+    content: "\e906";
+  }
+  .icon-home:before {
+    content: "\e90b";
+  }
+  .icon-mail:before {
+    content: "\e900";
+  }
+  .icon-person:before {
+    content: "\e901";
+  }
+  .icon-phone:before {
+    content: "\e902";
+  }
+  .icon-slider-arrow-l:before {
+    content: "\e903";
+  }
+  .icon-slider-arrow-r:before {
+    content: "\e904";
+  }
+  .icon-Star:before {
+    content: "\e905";
+  }
+  .icon-time:before {
+    content: "\e907";
+  }
+  .icon-arrow:before {
+    content: "\e908";
+  }
+  .icon-calendar:before {
+    content: "\e909";
+  }
+  .icon-location:before {
+    content: "\e90a";
+  }
+  

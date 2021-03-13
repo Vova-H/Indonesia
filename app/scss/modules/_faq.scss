@@ -1,0 +1,20 @@
+.faq {
+    background-color: $back;
+    color: $dblue;
+    padding-bottom: 1px;
+    padding-top: 1px;
+
+    &__title {
+        margin-top: 70px;
+        text-align: center;
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    &__accordion {
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+}

@@ -1,0 +1,14 @@
+.fancybox {
+
+    &-thumbs__list {
+        background-color: $back;
+
+        a:before {
+            border: 6px solid $lblue;
+        }
+    }
+
+    &-bg {
+        background-color: rgba(2, 37, 99,.6);
+    }
+}
